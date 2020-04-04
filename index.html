@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Replace with your title</title>
+    <title>Testing Cody's Map</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://api.mapbox.com/mapbox-gl-js/v1.7.0/mapbox-gl.js"></script>
@@ -97,10 +97,10 @@
       };
 
       //YOUR TURN: add your Mapbox access token 
-      mapboxgl.accessToken = '<pk.eyJ1IjoiZ29vZC1zaGVwaGVyZC1jb2xsZWN0aXZlIiwiYSI6ImNrOGt2aXYwNDAwODczbW5tdGVkczNqZHoifQ.XtoGHiN0uXUANio2uuKVKQ>';
+      mapboxgl.accessToken = 'pk.eyJ1IjoiZ29vZC1zaGVwaGVyZC1jb2xsZWN0aXZlIiwiYSI6ImNrOGt2aXYwNDAwODczbW5tdGVkczNqZHoifQ.XtoGHiN0uXUANio2uuKVKQ';
       var map = new mapboxgl.Map({
         container: 'map', // container id
-        style: "<mapbox://styles/mapbox/streets-v11>", //YOUR TURN: choose a style: https://docs.mapbox.com/api/maps/#styles
+        style: "mapbox://styles/mapbox/streets-v11", //YOUR TURN: choose a style: https://docs.mapbox.com/api/maps/#styles
         center: [-122.411464, 37.7852299], // starting position [lng, lat]
         zoom: 9, // starting zoom
         transformRequest: transformRequest
@@ -115,7 +115,7 @@
       function init() {
         Tabletop.init({
           // YOUR TURN: change 'key' value to point to your spreadsheet
-          key: '<https://docs.google.com/spreadsheets/d/1R5WPRotpKvKsUTVC5I7SCVBcVdhKKD2Y1H4-3LIoH5I/edit?usp=sharing>',
+          key: 'https://docs.google.com/spreadsheets/d/1m0oNA5S1r2lVEbR95KDCeVL9CckJGzq6zSzVSI7g3b0/edit?usp=sharing',
           // once Tabletop has loaded the data, it passes it to the 'callback' function, 'addPoints', defined below
           callback: addPoints,
           simpleSheet: true
